@@ -29,6 +29,7 @@ class Bot {
       adapter.processActivity(req, res, async(tc) => {
         if (tc.activity.type === 'message') { 
           const feed = tc.activity.text;
+          console.log(feed);
           if (rules.includes(feed)) {
             await tc.sendActivity(`you uttered a tagged keyworkd ${feed}`);
           }
