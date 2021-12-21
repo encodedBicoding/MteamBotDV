@@ -18,6 +18,8 @@
   "author": "Dominic Olije Isioma",
   "license": "ISC",
   "dependencies": {
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
     "babel-polyfill": "^6.26.0",
     "body-parser": "^1.19.1",
     "botbuilder": "^4.15.0",
