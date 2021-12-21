@@ -3,6 +3,7 @@ import 'babel-polyfill';
 import restify from 'restify';
 import errorHandler from 'errorhandler';
 import { config } from 'dotenv';
+import Bot from './api/v1/controllers/bot';
 config();
 
 
@@ -20,6 +21,8 @@ if (!isProduction) {
 } else {
   app.use(errorHandler());
 }
+
+app.post('/api/v1/messages', Bot.MTBot);
 
 
 app.listen(PORT, () => {
