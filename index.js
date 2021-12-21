@@ -24,6 +24,8 @@ if (!isProduction) {
 
 app.post('/api/v1/messages', Bot.MTBot);
 
+// call receiver webhook.
+app.post('/api/v1/incoming-call', Bot.MTBotCall);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}`);
