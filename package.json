@@ -1,0 +1,38 @@
+{
+  "name": "mteam_prototype_dv",
+  "version": "1.0.0",
+  "description": "a prototype for Microsoft team bot for deepview SMC",
+  "engines": {
+    "node": "10.22.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "export NODE_ENV=development && nodemon --exec node server.js"
+  },
+  "keywords": [
+    "microsoft",
+    "teams"
+  ],
+  "author": "Dominic Olije Isioma",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.19.1",
+    "botbuilder": "^4.15.0",
+    "dotenv": "^10.0.0",
+    "errorhandler": "^1.5.1",
+    "restify": "^8.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^2.0.15"
+  }
+}
