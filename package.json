@@ -18,6 +18,9 @@
   "author": "Dominic Olije Isioma",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
     "@babel/preset-env": "^7.2.0",
     "@babel/register": "^7.0.0",
     "babel-polyfill": "^6.26.0",
