@@ -5,11 +5,11 @@
   "engines": {
     "node": "10.22.0"
   },
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "export NODE_ENV=development && nodemon --exec node server.js",
-    "start": "export NODE_ENV=production && node server.js"
+    "start:dev": "export NODE_ENV=development && nodemon --exec node app.js",
+    "start": "export NODE_ENV=production && node app.js"
   },
   "keywords": [
     "microsoft",

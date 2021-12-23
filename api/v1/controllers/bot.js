@@ -14,6 +14,7 @@ class Bot {
         if (tc.activity.type === 'message') { 
           const feed = tc.activity.text;
           if (rules.includes(feed)) {
+            console.log(feed);
             await tc.sendActivity(`you uttered a tagged keyworkd ${feed}`);
           }
         }
@@ -26,7 +27,7 @@ class Bot {
 
   static async MTBotCall(req, res) { 
     try { 
-      adapter.processActivity(req, res, async(tc) => {
+      adapter.processActivity(req, res, async (tc) => {
         if (tc.activity.type === 'message') { 
           const feed = tc.activity.text;
           console.log(feed);
