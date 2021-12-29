@@ -11,6 +11,7 @@ class Bot {
   static async MTBot(req, res) { 
     try { 
       adapter.processActivity(req, res, async (tc) => { 
+        console.log(req);
         console.log(tc.activity.type);
         if (tc.activity.type === 'message') { 
           const feed = tc.activity.text;
