@@ -1,0 +1,70 @@
+{
+  "$schema": "https://github.com/OfficeDev/microsoft-teams-app-schema/blob/preview/DevPreview/MicrosoftTeams.schema.json",
+  "manifestVersion": "devPreview",
+  "version": "1.0.0",
+  "showLoadingIndicator": true,
+  "id": "68fbd23c-7642-40be-a5dd-71ea4d42b032",
+  "packageName": "com.deepview.mteambot",
+  "developer": {
+    "name": "SMCompliance",
+    "websiteUrl": "https://www.deepview.com",
+    "privacyUrl": "https://www.deepview.com/privacy",
+    "termsOfUseUrl": "https://www.deepview.com/privacy"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "mteam_bots_dv",
+    "full": "Monitor Teams chats and calls."
+  },
+  "description": {
+    "short": "Monitor Teams chats and calls.",
+    "full": "Secure information, protect your company data and assets by monitoring calls and activities in your workspace."
+  },
+  "accentColor": "#00CED1",
+  "staticTabs": [
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "about",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "68fbd23c-7642-40be-a5dd-71ea4d42b032",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "supportsFiles": true,
+      "isNotificationOnly": false,
+      "supportsCalling": true,
+      "supportsVideo": true
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "www.deepview.com",
+    "*.deepview.coom"
+  ],
+  "devicePermissions": [
+    "media",
+    "geolocation",
+    "notifications",
+    "midi",
+    "openExternal"
+  ]
+}
