@@ -29,6 +29,5 @@ app.get('/api/v1/incoming-call', Bot.MTBotCall);
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}`);
-  console.log(app.url);
 });
 
