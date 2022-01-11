@@ -11,13 +11,11 @@ class Bot {
   static async MTBot(req, res) { 
     try { 
       adapter.processActivity(req, res, async (tc) => { 
-        console.log(req);
-        console.log(tc.activity.type);
         if (tc.activity.type === 'message') { 
           const feed = tc.activity.text;
           console.log(feed);
           if (rules.includes(feed)) {
-            await tc.sendActivity(`you uttered a tagged keyworkd ${feed}`);
+            await tc.sendActivity(`you uttered a tagged keyword ${feed}`);
           }
         }
         return res.send();
@@ -35,7 +33,7 @@ class Bot {
           const feed = tc.activity.text;
           console.log(feed);
           if (rules.includes(feed)) {
-            await tc.sendActivity(`you uttered a tagged keyworkd ${feed}`);
+            await tc.sendActivity(`you uttered a tagged keyword ${feed}`);
           }
         }
         return res.send();
